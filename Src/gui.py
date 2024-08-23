@@ -10,10 +10,17 @@ class PackageInstallerGUI:
             "Wiz Tree": "https://diskanalyzer.com/files/wiztree_4_20_setup.exe",
             "Opera": "https://www.opera.com/computer/thanks?ni=stable&os=windows",
             "Godot": "https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_win64.exe.zip",
+            "Blender": "https://ftp.halifax.rwth-aachen.de/blender/release/Blender4.2/blender-4.2.1-windows-x64.msi",
+            "Firefox": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US",
+            "Discord": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
+            "TeamSpeak 5": "https://files.teamspeak-services.com/pre_releases/client/5.0.0-beta77/teamspeak-client.msi",
+            "TeamSpeak 3.6.2": "https://files.teamspeak-services.com/releases/client/3.6.2/TeamSpeak3-Client-win64-3.6.2.exe",
+            "7Zip": "https://7-zip.org/a/7z2408-x64.msi",
+            "WinRar": "https://www.win-rar.com/postdownload.html?&L=0",
         }
         self.root = tk.Tk()
         self.root.title("Package Installer")
-        self.root.geometry("400x300")
+        self.root.geometry("700x450")
         
         self.package_vars = {}
         self.create_widgets()

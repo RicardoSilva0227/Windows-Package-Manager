@@ -7,7 +7,12 @@ def run_installer(url, file):
     try: 
         installerNameExe = returnInstallerName(file)
         urllib.request.urlretrieve(url, installerNameExe)
-        subprocess.check_call([installerNameExe, '-ms'])
+        
+        if installerNameExe.endswith('.msi'):
+            subprocess.check_call(['msiexec', '/i', installerNameExe, '/quiet', '/norestart'])
+        else:
+            subprocess.check_call([installerNameExe, '/S', '/verysilent', '/norestart'])
+            
         os.remove(installerNameExe)
-    except subprocess.CalledProcessError:
-        print("Failed to install {package}")
+    except subprocess.CalledProcessError as error:
+        print("Failed to install {package}", error)

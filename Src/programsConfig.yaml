@@ -1,0 +1,43 @@
+Opera: 
+  SetupName: "OperaSetup.exe"
+  Url: "https://net.geo.opera.com/opera/stable/windows?utm_source=google&utm_medium=ose&utm_campaign=(none)&http_referrer=https://www.google.com/&utm_site=opera_com&utm_lastpage=opera.com/download&dl_token=75609641"
+  Instructions: "startmenushortcut=0 pintotaskbar=0 import-browser-data=0 enable-stats=0  enable-installer-stats=0  launchbrowser=0 run-at-startup=0 /silent"
+
+Wiz Tree:
+  SetupName: "wiztree_4_20_setup.exe"
+  Url: "https://diskanalyzer.com/files/wiztree_4_20_setup.exe"
+  Instructions: "/SP /VERYSILENT /SUPRESSMSGBOXES /NORESTART /NOCLOSEAPPLICATIONS /NORESTARTAPPLICATIONS /LANG=en /ALLUSERS"
+
+Discord:
+  SetupName: "wiztree_4_20_setup.exe"
+  Instructions: "/SP /VERYSILENT /SUPRESSMSGBOXES /NORESTART /NOCLOSEAPPLICATIONS /NORESTARTAPPLICATIONS /LANG=en /ALLUSERS"
+
+Firefox:
+  SetupName: "firefox_installer.exe"
+  Url: "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US"
+  Instructions: ""
+
+Godot:
+  SetupName: ""
+  Url: "https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_win64.exe.zip"
+  Instructions: ""
+
+TeamSpeak 5:
+  SetupName: "teamspeak-client.msi"
+  Url: "https://files.teamspeak-services.com/pre_releases/client/5.0.0-beta77/teamspeak-client.msi"
+  Instructions: ""
+
+7Zip:
+  SetupName: "7z2408-x64.msi"
+  Url: "https://7-zip.org/a/7z2408-x64.msi"
+  Instructions: ""
+
+WinRar:
+  SetupName: "winrar-x64-701.exe"
+  Url: "https://www.win-rar.com/postdownload.html?&L=0"
+  Instructions: ""
+
+Steam:
+  SetupName: "SteamSetup.exe"
+  Url: "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe"
+  Instructions: ""

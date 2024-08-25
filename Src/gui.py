@@ -7,13 +7,18 @@ from installer import run_installer
 class PackageInstallerGUI:
     def __init__(self):
         self.packages = {
-            "Wiz Tree": "https://diskanalyzer.com/files/wiztree_4_20_setup.exe",
-            "Opera": "https://www.opera.com/computer/thanks?ni=stable&os=windows",
-            "Godot": "https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_win64.exe.zip",
+            "Opera": "",
+            "Wiz Tree": "",
+            "Godot": "",
+            "Firefox": "",
+            "Discord": "",
+            "TeamSpeak 5": "",
+            "7Zip": "",
+            "WinRar": "",
         }
         self.root = tk.Tk()
         self.root.title("Package Installer")
-        self.root.geometry("400x300")
+        self.root.geometry("700x450")
         
         self.package_vars = {}
         self.create_widgets()
@@ -48,15 +53,13 @@ class PackageInstallerGUI:
         for i, package in enumerate(selected):
             url = self.packages[package]
 
-            if run_installer(url, package): 
+            if run_installer(package): 
                 messagebox.showinfo(f"{package} installed successfully!")
             else: 
                 messagebox.showinfo(f"Failed to install {package}.")
                 
             self.progress["value"] = i + 1
             self.root.update_idletasks()
-        
-        messagebox.showinfo("Done", "Selected packages have been installed or downloaded.")
         self.progress["value"] = 0  # Reset the progress bar
 
     def run(self):

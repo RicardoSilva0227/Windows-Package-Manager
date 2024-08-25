@@ -60,8 +60,6 @@ class PackageInstallerGUI:
                 
             self.progress["value"] = i + 1
             self.root.update_idletasks()
-        
-        messagebox.showinfo("Done", "Selected packages have been installed or downloaded.")
         self.progress["value"] = 0  # Reset the progress bar
 
     def run(self):
